@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript-basic</title>
+    <link href="css/style.css" rel="stylesheet">
+    
+    <script src="JavaScript/Modul7_1.1_1.2.js"></script>
+</head>
+<body>
+    <div class="container-fluid d-flex justify-content-center p-4">
+    <div class="container base p-4 ">
+        <div class="container id="title">
+            <h1 class="text-center mb-4">
+                Calculadora
+            </h1>
+        </div>
+        <div class="container " id="calculadora">
+            <div class="row">
+                <input id="display" class="col-12 mb-4 text-end calcs" type="text" name="display" size="20">
+            </div>
+        </div>
+        <div class="container" id="calc-buttons">
+
+            <div class="row mb-1">
+                <input  type="button" class="btn btn-lg btn-default col-3" value="7" onClick="display(7)">
+                <input  type="button" class="btn btn-lg btn-default col-3" value="8" onClick="display(8)">
+                <input  type="button" class="btn btn-lg btn-default col-3" value="9" onClick="display(9)">
+                <input  type="button" class="btn btn-lg btn-default col-3" value="*" onClick="operacion('multiplicacion')">
+            </div>
+            <div class="row mb-1">
+                <input  type="button" class="btn btn-lg btn-default col-3" value="4" onClick="display(4)">
+                <input  type="button" class="btn btn-lg btn-default col-3" value="5" onClick="display(5)">
+                <input  type="button" class="btn btn-lg btn-default col-3" value="6" onClick="display(6)">
+                <input  type="button" class="btn btn-lg btn-default col-3" value="-" onClick="operacion('resta')">
+            </div>
+            <div class="row mb-1">
+                <input  type="button" class="btn btn-lg btn-default col-3" value="1" onClick="display(1)">
+                <input  type="button" class="btn btn-lg btn-default col-3" value="2" onClick="display(2)">
+                <input  type="button" class="btn btn-lg btn-default col-3" value="3" onClick="display(3)">
+                <input  type="button" class="btn btn-lg btn-default col-3" value="+" onClick="operacion('suma')">
+            </div>
+            <div class="row">
+                <input type="button" class="btn btn-lg btn-default col" value="AC" onClick="ac()">
+                <input type="button" class="btn btn-lg btn-default col-3" value="0" onClick="display(0)">
+                <input  type="button" class="btn btn-lg btn-default col-3" value="=" onClick="resultado()">
+                <input  type="button" class="btn btn-lg btn-default col-3" value="/" onClick="operacion('division')">
+            </div>
+        </div>
+    </div> 
+    </div>
+    <script src="JavaScript/Modul7_carculadora.js"></script>
+    <script src="dist/js/bootstrap.min.js"> </script> 
+    <script src="dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
